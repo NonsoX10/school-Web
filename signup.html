@@ -4,10 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link
-        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,400;1,500&family=Poppins:wght@300;400;500;600;700&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="school.css" title="Apex Academy">
+    <title>Apex Academy - Sign Up</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,400;1,500&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="school.css">
 </head>
 
 <body>
@@ -16,50 +15,50 @@
         <p class="logo">Apex Academy</p>
 
         <nav class="navlinks">
-            <a href="index.html">home</a>
-            <a href="index.html">About</a>
-            <a href="index.html">Course</a>
-            <a href="login.html">Parent login</a>
-            <a href="signup.html">Parent sign-up</a>
-
-
-
-
-            <!-- <a href="#">home</a>
-            <a href="index.html">About</a>
-            <a href="index.html#">Course</a>
-            <a href="#">Exploites</a>
-            <a href="login.html">Parent login</a>
-            <a href="signup.html">Parent sign-up</a> -->
+            <a href="index.html">Home</a>
+            <a href="index.html#about">About</a>
+            <a href="index.html#course">Course</a>
+            <a href="login.html">Parent Login</a>
+            <a href="signup.html">Parent Sign-Up</a>
         </nav>
-
-
     </header>
-
 
     <div class="content">
 
         <img src="./pictures/download.jpg" alt="login-Background" class="loging-img">
+        
         <div class="form-box">
             <h1>Welcome to Apex Academy</h1>
-            <h2>sign up</h2>
-            <p>Enter your details below to sign-up</p>
-            <input type="text" placeholder="Name ">
-            <input type="text" placeholder="Surname"><br>
-            <input type="text" placeholder="Class">
-            <input type="text" placeholder="Home address"><br>
-            <input type="text" placeholder="Phone number 1">
-            <input type="email" placeholder="Phone number 2"> <br>
-            <input type="email" placeholder="email or Student id">
-            <input type="password" placeholder="Password"> <br>
-            <button>Sign Up</button>
+            <h2>Sign Up</h2>
+            <p>Enter your details below to sign up</p>
+
+            <!-- WRAPPED IN A FORM TAG -->
+            <form>
+                <input type="text" placeholder="Name" required>
+                <input type="text" placeholder="Surname" required><br>
+                <input type="text" placeholder="Class" required>
+                <input type="text" placeholder="Home address" required><br>
+                <input type="tel" placeholder="Phone number 1" required>
+                <input type="tel" placeholder="Phone number 2"><br>
+                <input type="text" placeholder="Email or Student ID" required>
+                <input type="password" placeholder="Password" required><br>
+                <button type="submit">Sign Up</button>
+            </form>
         </div>
-
-
-
 
     </div>
 
+    <!-- Success Modal -->
+    <div id="successModal" class="modal-overlay">
+        <div class="modal-card">
+            <h2 id="modalTitle">Success!</h2>
+            <p id="modalMessage">Your action was successful.</p>
+            <button id="modalCloseBtn" type="button">OK</button>
+        </div>
+    </div>
+
+    <!-- Link to your JavaScript file -->
+    <script src="js/web.js"></script>
 </body>
 
 </html>
