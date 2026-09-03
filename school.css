@@ -262,3 +262,11 @@ button {
     padding: 15px 0;
     font-weight: bold;
 }
+
+.footer-section {
+    background-color: blue;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 20px;
+}
